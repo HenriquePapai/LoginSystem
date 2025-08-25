@@ -33,7 +33,6 @@ def verificar_usuario(email, senha):
     conn = conectar()
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM usuarios WHERE email=?", (email,))
-    # cursor.execute(f"SELECT * FROM usuarios WHERE email='{email}' AND senha='{senha}'")
     resultado = cursor.fetchone()
     conn.close()
 

@@ -7,7 +7,7 @@ def inicio():
         print("---------------")
         print("# 1 - Login\n# 2 - Cadastrar\n# 3 - Sair")
         print("---------------")
-        opcao = int(input("Option: "))
+        opcao = int(input("Opção: "))
 
         if opcao == 1:
             usuario = login()
@@ -17,11 +17,9 @@ def inicio():
             cadastrar()
         elif opcao == 3:
             print("Saindo...")
-            time.sleep(1)
             break
         else:
-            print("This option does not exist, please select another")
-            time.sleep(2)
+            print("Essa opção não existe, por favor selecione outra")
             limpar_terminal()
 
 if __name__ == "__main__":
